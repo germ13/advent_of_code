@@ -1,8 +1,9 @@
 (ns aoc.core
   (:gen-class)
-  (:use [aoc.eighteen.day01.solution01]))
+  (:require [aoc.eighteen.day01.solution01a :as d1801a] ))
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (aoc.eighteen.day01.solution01/execute))
+  (println
+   (d1801a/answer)))

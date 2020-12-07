@@ -1,4 +1,4 @@
-(ns aoc.eighteen.day01.solution01)
+(ns aoc.eighteen.day01.solution01a)
 
 (defn answer []
   (->>
