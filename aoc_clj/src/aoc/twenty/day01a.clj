@@ -13,3 +13,5 @@
          y f
          :when (= (+ x y) 2020)]
      (* x y))))
+
+(answer)
