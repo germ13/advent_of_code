@@ -1,8 +1,5 @@
 (ns aoc.twenty.day02a)
 
-(def a1 "4-5 j: jhjjhxhjkxj")
-(def a2 "16-17 k: kkkkkkkzkkkkrkkmfkk")
-
 (defn parser [expr]
   (let [tokens (clojure.string/split expr #" ")]
     {:bounds (first tokens)
@@ -54,11 +51,9 @@
   (->>
    (slurp "src/aoc/twenty/day02a-data.txt")
    clojure.string/split-lines
-   (map #(password-check %))
+   (map #(password-check2 %))
    (filter true?)
    count))
 
-
-
-
-
+(answer1)
+(answer2)
